@@ -49,7 +49,7 @@ def local_search_2_opt_stochastic(Xdata, city_tour, recursive_seeding = 1):
     return city_list
 ######################## Part 1 - Usage ####################################
 
-X = pd.read_csv('Python-MH-Local Search-2-opt-Dataset-01.txt', sep = '\t') #17 cities => Optimum = 2085
+X = pd.read_csv('Python-MH-Local Search-2-opt-Stochastic-Dataset-01.txt', sep = '\t') #17 cities => Optimum = 2085
 
 cities = [[   1,  2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,   1   ], 4722]
 ls2opts = local_search_2_opt_stochastic(X, city_tour = cities, recursive_seeding = 100)
