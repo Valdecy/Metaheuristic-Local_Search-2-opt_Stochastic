@@ -92,7 +92,7 @@ def plot_tour_coordinates (coordinates, city_tour):
     return
 
 # Function: 2_opt Stochastic
-def local_search_2_opt_stochastic(Xdata, city_tour, recursive_seeding = 1):
+def local_search_2_opt_stochastic(Xdata, city_tour, recursive_seeding = 150):
     count = 0
     city_list = copy.deepcopy(city_tour)
     while (count < recursive_seeding):
